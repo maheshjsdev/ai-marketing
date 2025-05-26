@@ -1,0 +1,23 @@
+.navbar{
+    min-height: 70px;
+    //  .navbar-brand{
+    //     img {
+    //         width: 100px;
+    //         height: 50px;
+    //     }
+    //  }
+
+    .iconButton{
+
+        &:hover{
+            svg.iconify.iconify--solar{
+                color: var(--activeLinkBg);
+            }
+        }
+    }
+    .userImg{
+        img{
+            width: 40px;
+        }
+    }
+}

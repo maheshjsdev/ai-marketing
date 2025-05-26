@@ -1,0 +1,31 @@
+section.homeSection {
+    height: 100%;
+    display: flex;
+    padding: 40px 100px 40px 100px;
+
+    .row {
+        background-color: var(--whiteBg);
+        border-radius: var(--borderRedius);
+
+        img {
+            width: 300px;
+        }
+
+    }
+
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  iframe {
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  .iframe-container{
+    height: 600px;
+  }

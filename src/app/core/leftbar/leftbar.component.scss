@@ -1,0 +1,167 @@
+.leftbar {
+    background-color: var(--whiteBg);
+    width: 260px;
+    height: calc(100% - 70px);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition:var(--transition);
+
+
+    ul {
+        margin: 0;
+        padding: 0px 10px 0 10px;
+
+        li {
+            list-style: none;
+
+            .leftbarHading {
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                padding: 7px 0;
+                line-height: 26px;
+                margin-left: 10px;
+                transition: var(--transitionAll);
+            }
+
+            .dots {
+                display: none;
+                height: 40px;
+                transition: var(--transitionAll);
+            }
+
+            .mat-expansion-panel:not([class*=mat-elevation-z]) {
+                box-shadow: none;
+            }
+
+            .menuSubHead {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                cursor: pointer;
+            }
+
+            .menuMinHead {
+                font-size: 14px;
+                font-weight: 400;
+                line-height: 24px;
+                cursor: pointer;
+            }
+
+            .mat-mdc-list-item-icon {
+                font-size: var(--mdc-list-list-item-leading-icon-size, 20px);
+            }
+
+            ::ng-deep.mat-expansion-panel-body {
+                padding: 0 !important;
+            }
+
+            .mat-expansion-panel-header.mat-expanded {
+                height: 48px;
+            }
+
+            .mat-mdc-list-base {
+                display: flex;
+                gap: 5px;
+                flex-direction: column;
+            }
+
+            .mdc-list-item {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                border-radius: 12px;
+                padding: 0 0 0 22px;
+                cursor: pointer;
+
+                &:hover {
+                    background: var(--mat-expansion-header-hover-state-layer-color,
+                            color-mix(in srgb, var(--mat-sys-on-surface) calc(var(--mat-sys-hover-state-layer-opacity)* 100%), transparent));
+                }
+            }
+
+            .mdc-list-item:focus::before {
+                background-color: transparent;
+                opacity: 1;
+            }
+
+            .active {
+                box-shadow: 0 17px 20px -8px #4d5bec3b;
+                background-color: var(--activeLinkBg);
+
+                svg.iconify.iconify--solar.mat-mdc-list-item-icon.routeIcon.mdc-list-item__start {
+                    color: var(--whiteText);
+                }
+
+                .menuSubHead {
+                    color: var(--whiteText);
+                }
+
+                ::ng-deep.mat-expansion-indicator svg {
+                    fill: var(--whiteText) !important;
+                }
+
+
+            }
+
+            .mat-mdc-list-item.mdc-list-item.active {
+                &:hover {
+                    box-shadow: 0 17px 20px -8px #4d5bec3b;
+                    background-color: var(--activeLinkBg);
+                }
+
+                .menuMinHead {
+                    color: #fff;
+                }
+
+                &:focus {
+                    color: #fff;
+                }
+
+            }
+
+        }
+    }
+}
+
+
+.leftbar {
+    transition:var(--transition);
+
+    &:hover {
+        width: 260px !important;
+        z-index: 999;
+        transition:var(--transition);
+        .mat-expansion-panel-header {
+            padding: 0 24px;
+
+            .menuSubHead {
+                display: block !important;
+                transition: var(--transitionAll);
+            }
+
+            ::ng-deep.mat-expansion-indicator {
+                display: block !important;
+            }
+        }
+
+        ::ng-deep.mat-expansion-panel-body {
+            display: block;
+            transition: var(--transitionAll);
+        }
+
+        .leftbarHading {
+            display: block;
+            transition: var(--transitionAll);
+        }
+
+        .dots {
+            display: none !important;
+        }
+    }
+
+
+}

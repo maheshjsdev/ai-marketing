@@ -1,0 +1,271 @@
+<div class="leftbar">
+    <!-- <div class="flex flex-column gap-3">
+
+    </div> -->
+    <ul class="flex flex-column gap-3">
+        <li class="nav-item mb-1" role="button">
+            <a class="nav-link leftbarHading">Projects</a>
+            <div class="dots">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
+                    role="img" class="iconify iconify--solar icon-18 caption-icon" width="1em" height="1em"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" data-icon="solar:menu-dots-linear">
+                    <g fill="none" stroke="currentColor" stroke-width="1.5">
+                        <circle cx="5" cy="12" r="2"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                        <circle cx="19" cy="12" r="2"></circle>
+                    </g>
+                </svg>
+
+            </div>
+        </li>
+        <ul>
+            <mat-accordion>
+                <li class="nav-item mb-2" role="button">
+
+                    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                        <mat-expansion-panel-header routerLinkActive="active" routerLink="home/dashboard">
+                            <mat-panel-title>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:widget-add-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" d="M14.5 6.5h3m0 0h3m-3 0v3m0-3v-3"></path>
+                                            <path
+                                                d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 8.386 2.5 6.5Zm11 11c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414Z">
+                                            </path>
+                                            <path
+                                                d="M2.5 17.5c0-1.886 0-2.828.586-3.414S4.614 13.5 6.5 13.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5Z"
+                                                opacity=".5"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit</span>
+                                </div>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <mat-list role="list">
+                            <mat-list-item role="listitem" routerLinkActive="active" routerLink="home/analytics"
+                                matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuMinHead">Site Audit1</span>
+                                </div>
+                            </mat-list-item>
+
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit2</span>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit3</span>
+                                </div>
+                            </mat-list-item>
+
+                        </mat-list>
+                    </mat-expansion-panel>
+
+
+                </li>
+                <li class="nav-item mb-2" role="button">
+
+                    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:widget-add-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" d="M14.5 6.5h3m0 0h3m-3 0v3m0-3v-3"></path>
+                                            <path
+                                                d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 8.386 2.5 6.5Zm11 11c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414Z">
+                                            </path>
+                                            <path
+                                                d="M2.5 17.5c0-1.886 0-2.828.586-3.414S4.614 13.5 6.5 13.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5Z"
+                                                opacity=".5"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit</span>
+                                </div>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <mat-list role="list">
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuMinHead">Site Audit4</span>
+                                </div>
+                            </mat-list-item>
+
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit5</span>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit6</span>
+                                </div>
+                            </mat-list-item>
+
+                        </mat-list>
+
+                    </mat-expansion-panel>
+
+                </li>
+
+                <li class="nav-item mb-2" role="button">
+                    <mat-expansion-panel (opened)="panelOpenState.set(true)" (closed)="panelOpenState.set(false)">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon mdc-list-item__start"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:widget-add-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <path stroke-linecap="round" d="M14.5 6.5h3m0 0h3m-3 0v3m0-3v-3"></path>
+                                            <path
+                                                d="M2.5 6.5c0-1.886 0-2.828.586-3.414S4.614 2.5 6.5 2.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 8.386 2.5 6.5Zm11 11c0-1.886 0-2.828.586-3.414s1.528-.586 3.414-.586s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586s-.586-1.528-.586-3.414Z">
+                                            </path>
+                                            <path
+                                                d="M2.5 17.5c0-1.886 0-2.828.586-3.414S4.614 13.5 6.5 13.5s2.828 0 3.414.586s.586 1.528.586 3.414s0 2.828-.586 3.414s-1.528.586-3.414.586s-2.828 0-3.414-.586S2.5 19.386 2.5 17.5Z"
+                                                opacity=".5"></path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit</span>
+                                </div>
+                            </mat-panel-title>
+                        </mat-expansion-panel-header>
+                        <mat-list role="list">
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuMinHead">Site Audit7</span>
+                                </div>
+                            </mat-list-item>
+
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit8</span>
+                                </div>
+                            </mat-list-item>
+                            <mat-list-item role="listitem" matRipple>
+                                <div class="d-flex align-items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        aria-hidden="true" role="img"
+                                        class="iconify iconify--solar mat-mdc-list-item-icon routeIcon ng-tns-c13731479-217 mdc-list-item__start ng-star-inserted"
+                                        width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                                        matlistitemicon="" data-icon="solar:round-alt-arrow-right-line-duotone">
+                                        <g fill="none" stroke="currentColor" stroke-width="1.5">
+                                            <circle cx="12" cy="12" r="10" opacity=".5"></circle>
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="m10.5 9l3 3l-3 3">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                    <span class="menuSubHead">Site Audit9</span>
+                                </div>
+                            </mat-list-item>
+
+                        </mat-list>
+
+                    </mat-expansion-panel>
+                </li>
+            </mat-accordion>
+
+        </ul>
+    </ul>
+
+</div>

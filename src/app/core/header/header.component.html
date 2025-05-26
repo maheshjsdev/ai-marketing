@@ -1,0 +1,36 @@
+<nav class="navbar p-0">
+    <div class="container-fluid pe-3">
+        <div class="d-flex align-items-center gap-3">
+            <a class="navbar-brand" href="javascript:void(0)"><img src="./assets/img/logo.svg"></a>
+
+            <button mat-icon-button class="iconButton" (click)="leftbarToggle()"><svg xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img"
+                    class="iconify iconify--solar icon-20 d-flex" width="1em" height="1em"
+                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"
+                    data-icon="solar:hamburger-menu-line-duotone">
+                    <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5">
+                        <path d="M20 7H4"></path>
+                        <path d="M20 12H4" opacity=".5"></path>
+                        <path d="M20 17H4"></path>
+                    </g>
+                </svg></button>
+        </div>
+        <button mat-button [matMenuTriggerFor]="menu" #menuTrigger>
+            <div class="d-flex align-items-center">
+                <div class="userImg">
+                    <img src="./assets/img/userImg.svg" alt="user image">
+                </div>
+                <mat-icon>arrow_drop_down</mat-icon>
+            </div>
+        </button>
+        <mat-menu #menu="matMenu">
+            <mat-list>
+                <mat-list-item>Username : abc</mat-list-item>
+                <mat-list-item>Email : {{'abc@gmail.com'}}</mat-list-item>
+            </mat-list>
+            <button mat-mini-fab class="ms-2 mb-2">
+                <mat-icon>power_settings_new</mat-icon>
+            </button>
+        </mat-menu>
+    </div>
+</nav>
